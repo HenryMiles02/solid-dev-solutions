@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+  background: var(--background-color-primary);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-primary);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@theme {
+  --color-*: initial;
+  /* === BASE / BACKGROUND === */
+  --background-color-primary: #020617;      /* Background principal (quase preto) */
+  --background-color-secondary: #0A2540;    /* Azul escuro */
+  --background-color-tertiary: #0E3A8A;     /* Azul profundo */
+  --background-color-glass: var(--glass-bg);
+  --background-gradient: var(--gradient-dark);
+
+  /* === BRAND / PRIMARY === */
+  --color-blue-900: #0A2540;
+  --color-blue-800: #0E3A8A;
+  --color-blue-700: #1E40AF;
+  --color-blue-600: #2563EB;
+  --color-blue-500: #3B82F6;
+  --color-blue-400: #38BDF8;
+
+  /* === ACCENT / GLOW === */
+  --color-accent-500: #38BDF8;      /* Azul glow */
+  --color-accent-400: #7DD3FC;
+
+  /* === TEXT === */
+  --text-color-primary: #E5E7EB;    /* Texto principal */
+  --text-color-secondary: #94A3B8;  /* Texto secundário */
+  --text-color-muted: #64748B;      /* Texto desativado */
+
+  /* === BORDERS / DIVIDERS === */
+  --border-color-default: rgba(148, 163, 184, 0.2);
+  --border-color-glow: rgba(56, 189, 248, 0.6);
+  --border-color-glass: var(--glass-border);
+
+  --shadow-color-soft: var(--shadow-soft);
+  --shadow-color-glow: var(--shadow-glow);
+
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-secondary: "Poppins", sans-serif;
+}
+
+:root {
+  /* === GLASS === */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.15);
+
+  /* === SHADOWS === */
+  --shadow-soft: 0 8px 32px rgba(2, 6, 23, 0.6);
+  --shadow-glow: 0 0 40px rgba(56, 189, 248, 0.35);
+
+  /* === GRADIENTS === */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #0A2540,
+    #0E3A8A,
+    #2563EB
+  );
+
+  --gradient-accent: linear-gradient(
+    90deg,
+    #2563EB,
+    #38BDF8
+  );
+
+  --gradient-dark: radial-gradient(
+    circle at top,
+    #0E3A8A,
+    #020617
+  );
+}
