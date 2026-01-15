@@ -33,7 +33,7 @@ export default function NavBar() {
                     <div className="flex flex-row max-sm:flex-col sm:items-center gap-3 transition-all">
                         <Button variant="link" onClick={() => {
                             document
-                                .getElementById("home")
+                                .getElementById("hero")
                                 ?.scrollIntoView({behavior: "smooth"})
                             setSidebarOpen(false);
                         }}>Home</Button>
