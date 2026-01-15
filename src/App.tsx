@@ -1,5 +1,6 @@
-import Hero from "./components/Hero"
 import NavBar from "./components/Navbar"
+import Hero from "./components/Hero"
+import Services from "./components/Services"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="flex flex-col items-center w-full">
       <NavBar />
       <Hero />
+      <Services />
     </div>
   )
 }

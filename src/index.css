@@ -18,7 +18,60 @@
   }
 }
 
+@layer utilities {
+    .border-gradient-conic {
+      @apply relative rounded-[10px];
+    }
+
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    .border-gradient-conic::after, .border-gradient-conic::before {
+      content: '';
+      position: absolute;
+      width: 100.5%;
+      height: 105%;
+      background: conic-gradient(from var(--angle), transparent 70%, var(--background-color-tertiary));
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      border-radius: 10px;
+      animation: border-spin 3.5s linear infinite;
+    }
+
+    .border-gradient-conic::before {
+      filter: blur(1.5rem);
+      opacity: 0.5;
+    }
+    @keyframes border-spin {
+        from {
+        --angle: 0deg;
+      }
+      to {
+        --angle: 360deg;
+      }
+    }
+}
+
 @layer components {
+  /* .card-animation::after, .card-animation::before {
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 100.5%;
+    background: conic-gradient(var(--background-color-primary), var(--background-color-secondary), var(--background-color-tertiary), var(--background-color-primary));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+  } */
+  
   .hero-bg {
     position: absolute;
     inset: 0;
@@ -51,6 +104,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+  }
+
+  .border-animation {
+    animation: border-spin 3s ease-in-out infinite;
   }
 }
 
