@@ -11,7 +11,7 @@ export const buttonVariants = cva("transition-all duration-300 cursor-pointer", 
             after:left-0 after:bottom-1 after:h-[2px] after:w-full after:bg-tertiary
             after:scale-x-0 after:origin-center after:transition-transform after:duration-300`,
             button: "bg-blue-500 text-white font-bold px-4 py-2 rounded-md hover:shadow-color-soft hover:-translate-y-0.5",
-            ghost: "bg-glass border border-glass text-primary font-bold px-4 py-2 rounded-md hover:bg-[var(--border-color-glass)] hover:scale-95 hover:shadow-color-soft",
+            ghost: "bg-glass border border-glass text-primary font-bold px-4 py-2 rounded-md hover:bg-[var(--border-color-glass)] hover:-translate-y-0.5 hover:shadow-color-soft",
         },
     },
     defaultVariants: {

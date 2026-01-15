@@ -14,7 +14,7 @@ export default function NavBar() {
     return (
         <nav className="flex justify-between items-center px-4 sm:px-5 lg:px-16 xl:px-24 py-4 max-sm:w-[calc(100vw-2rem)] sm:w-[calc(100vw-3rem)] md:w-[calc(100vw-11rem)] lg:w-[calc(100vw-20rem)] xl:w-[calc(100vw-30rem)] fixed top-6 z-20 backdrop-blur-xl font-medium bg-glass border border-glass rounded-2xl gap-6">
             <div className="flex">
-                <a href="#">
+                <a href="#hero">
                     <h1 className="font-family-secondary font-bold text-lg tracking-tight text-blue-500">SolidDev <span className="text-primary">Solutions</span></h1>
                 </a>
             </div>
