@@ -45,7 +45,7 @@ export default function NavBar() {
                         }}>Serviços</Button>
                         <Button variant="link" onClick={() => {
                             document
-                                .getElementById("portifolio")
+                                .getElementById("projects")
                                 ?.scrollIntoView({ behavior: "smooth" })
                             setSidebarOpen(false);
                         }}>Portifólio</Button>

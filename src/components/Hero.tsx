@@ -57,7 +57,7 @@ export default function  Hero() {
                         </Button>
                     </div>
 
-                    <div className="mt-8 flex justify-center max-w-2xl gap-8 text-secondary font-extrabold text-base sm:text-2xl flex-wrap items-center">
+                    <div className="mt-8 lg:mt-15 flex justify-center max-w-2xl gap-8 text-secondary font-extrabold text-base sm:text-2xl flex-wrap items-center">
                         <h1>REACT</h1>
                         <h1>TYPESCRIPT</h1>
                         <h1>NODE.JS</h1>
