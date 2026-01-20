@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./ui/Button";
 
 
 
@@ -43,14 +43,14 @@ export default function  Hero() {
 
                     <div className="flex justify-center max-sm:flex-col max-sm:gap-4 sm:gap-4 lg:gap-10 sm:pt-3 lg:pt-6">
                         <Button 
-                            variant="button"
+                            variant="secondary"
                             className="text-xl font-semibold"
                         >
                         Fale conosco
                         </Button>
 
                         <Button 
-                            variant="ghost"
+                            variant="tertiary"
                             className="text-xl font-semibold"
                         >
                         Ver serviços

@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./ui/Button";
 import Assets from "../assets/assets";
 import React from "react";
 
@@ -31,19 +31,19 @@ export default function NavBar() {
                 
                 <div className={`flex flex-row ${!sidebarOpen ? 'max-sm:w-0 overflow-hidden' : 'max-sm:w-60 max-sm:px-10'} max-sm:fixed top-[61px] bottom-0 right-0 max-sm:h-[calc(100vh-60px)] max-sm:flex-col max-sm:bg-primary max-sm:pt-20 sm:items-center sm:overflow-visible gap-4 transition-all`}>
                     <div className="flex flex-row max-sm:flex-col sm:items-center gap-3 transition-all">
-                        <Button variant="link" onClick={() => {
+                        <Button variant="primary" onClick={() => {
                             document
                                 .getElementById("hero")
                                 ?.scrollIntoView({behavior: "smooth"})
                             setSidebarOpen(false);
                         }}>Home</Button>
-                        <Button variant="link" onClick={() => {
+                        <Button variant="primary" onClick={() => {
                             document
                                 .getElementById("services")
                                 ?.scrollIntoView({ behavior: "smooth"})
                             setSidebarOpen(false);
                         }}>Serviços</Button>
-                        <Button variant="link" onClick={() => {
+                        <Button variant="primary" onClick={() => {
                             document
                                 .getElementById("projects")
                                 ?.scrollIntoView({ behavior: "smooth" })
@@ -51,8 +51,8 @@ export default function NavBar() {
                         }}>Portifólio</Button>
                     </div>
 
-                    <Button variant="button" onClick={() => {
-                        document.getElementById("contato")
+                    <Button variant="secondary" onClick={() => {
+                        document.getElementById("contact")
                         ?.scrollIntoView({ behavior: "smooth" })
                     }}>Contato</Button>
                 </div>

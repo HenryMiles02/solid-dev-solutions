@@ -6,11 +6,15 @@ import streaming_platform_template from "./streaming_plataform_dark.png";
 import landing_page_template from "./landing_page.png";
 import rest_api_template from "./api.png";
 import admin_dashboard_template from "./dashboard.png";
+import email_icon from "./email_icon.svg?react";
+import pin_icon from "./pin_icon.svg?react";
 
 const Assets = {
     Icons: {
         Close: close_icon,
         Menu: menu_icon,
+        Email: email_icon,
+        Pin: pin_icon,
     },
     projectsData: [
         {

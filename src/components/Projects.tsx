@@ -1,5 +1,5 @@
 import Assets from "../assets/assets"
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "./ui/ProjectCard"
 
 
 export default function Projects() {
