@@ -8,6 +8,8 @@ import rest_api_template from "./api.png";
 import admin_dashboard_template from "./dashboard.png";
 import email_icon from "./email_icon.svg?react";
 import pin_icon from "./pin_icon.svg?react";
+import instagram from "./instagram.svg?react";
+import linkedin from "./linkedin.svg?react";
 
 const Assets = {
     Icons: {
@@ -15,6 +17,8 @@ const Assets = {
         Menu: menu_icon,
         Email: email_icon,
         Pin: pin_icon,
+        Instagram: instagram,
+        Linkedin: linkedin,
     },
     projectsData: [
         {
