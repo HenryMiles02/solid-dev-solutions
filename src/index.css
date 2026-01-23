@@ -18,6 +18,120 @@
   }
 }
 
+@layer utilities {
+    .border-gradient-conic {
+      @apply relative rounded-[10px];
+    }
+
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    .border-gradient-conic::after, .border-gradient-conic::before {
+      content: '';
+      position: absolute;
+      width: 100.5%;
+      height: 105%;
+      background: conic-gradient(from var(--angle), transparent 70%, var(--background-color-tertiary));
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      border-radius: 10px;
+      animation: border-spin 3.5s linear infinite;
+    }
+
+    .border-gradient-conic::before {
+      filter: blur(1.5rem);
+      opacity: 0.5;
+    }
+    @keyframes border-spin {
+        from {
+        --angle: 0deg;
+      }
+      to {
+        --angle: 360deg;
+      }
+    }
+}
+
+@layer components {
+  /* .card-animation::after, .card-animation::before {
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 100.5%;
+    background: conic-gradient(var(--background-color-primary), var(--background-color-secondary), var(--background-color-tertiary), var(--background-color-primary));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+  } */
+  
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    background-size: 400% 400%;
+    animation: hero-gradient 16s ease infinite;
+    z-index: -1;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      rgba(56, 189, 248, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(56, 189, 248, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+    animation: grid-move 20s ease infinite;
+    z-index: -1;
+  }
+
+  .text-gradient-accent {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .border-animation {
+    animation: border-spin 3s ease-in-out infinite;
+  }
+}
+
+@keyframes hero-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes grid-move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 40px;
+  }
+}
+
 @theme {
   --color-*: initial;
   /* === BASE / BACKGROUND === */
@@ -63,14 +177,15 @@
 
   /* === SHADOWS === */
   --shadow-soft: 0 8px 32px rgba(2, 6, 23, 0.6);
-  --shadow-glow: 0 0 40px rgba(56, 189, 248, 0.35);
+  --shadow-glow: 0 8px 16px rgba(56, 189, 248, 0.35);
 
   /* === GRADIENTS === */
   --gradient-primary: linear-gradient(
     135deg,
+    #020617,
     #0A2540,
-    #0E3A8A,
-    #2563EB
+    #0E3A8A
+    /* #2563EB */
   );
 
   --gradient-accent: linear-gradient(
