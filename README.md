@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 🚀 SolidDev Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **SolidDev Solutions** é uma empresa especializada no desenvolvimento de soluções digitais modernas, escaláveis e de alto desempenho. Nosso foco está em transformar ideias em produtos sólidos, com arquitetura bem definida e excelente experiência do usuário.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Sobre a Empresa
 
-## React Compiler
+A SolidDev Solutions atua no desenvolvimento de sistemas web e aplicações completas (fullstack), atendendo demandas que exigem performance, organização e escalabilidade.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 💼 Áreas de atuação:
+- Desenvolvimento Front-End moderno
+- Criação de APIs seguras e escaláveis
+- Sistemas ERP multiempresa
+- Aplicações web completas
+- Refatoração e otimização de sistemas
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack Tecnológica
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Front-End
+- React.js  
+- Tailwind CSS  
+- TypeScript  
+- Vite  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Back-End
+- Node.js  
+- Express.js  
+- PostgreSQL  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Infraestrutura
+- Docker  
+- Git  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🏗️ Arquitetura
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Nossos projetos seguem padrões modernos de desenvolvimento, com foco em:
+
+- Separação de responsabilidades  
+- Código limpo e reutilizável  
+- Escalabilidade  
+- Manutenibilidade  
+
+---
+
+## 🔐 Propriedade e Uso
+
+Este repositório é de propriedade exclusiva da **SolidDev Solutions**.
+
+> ⚠️ **Atenção:**
+> - Este projeto **não é open source**
+> - Não é permitido copiar, distribuir ou modificar sem autorização
+> - Uso restrito à equipe e clientes autorizados
+
+---
+
+## 📈 Objetivo
+
+Entregar soluções digitais robustas, seguras e eficientes, alinhadas às necessidades do mercado e dos nossos clientes.
+
+---
+
+## 📞 Contato
+
+Para parcerias ou contratação de serviços:
+
+- Email: contato@soliddev.com  
+- LinkedIn: (adicionar)  
+- Website: (adicionar)
+
+---
